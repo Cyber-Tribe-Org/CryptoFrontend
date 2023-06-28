@@ -1,0 +1,55 @@
+body {
+    padding-top: 100px; /* Adjust the value to match the height of your header */
+}
+
+.header-nav {
+    display: flex;
+    position: fixed;
+    top: 0;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    transition: background-color 0.3s;
+    height: 100px;
+    width: 100%; /* Add this property to make the header occupy the full width */
+}
+
+.header-nav.scrolled {
+    background-color: #ffffff; /* Apply the desired background color for the scrolled header */
+    opacity: 0.8;
+    z-index: 2;
+}
+
+.header-link {
+    color: #000000;
+    text-decoration: none;
+    margin: 0 10px;
+    padding: 10px;
+    transition: color 0.3s;
+}
+
+.header-link:hover {
+    color: #f15b2a;
+}
+
+.header-link.active {
+    color: #f15b2a;
+    font-weight: bold;
+}
+
+.login-container {
+    display: flex;
+    align-items: center;
+    margin-right: 20px; /* Add this property to create space between the login container and the right end */
+}
+
+.login-link {
+    color: #000000;
+    text-decoration: none;
+    padding: 10px;
+    transition: color 0.3s;
+}
+
+.login-link:hover {
+    color: #f15b2a;
+}
